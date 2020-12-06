@@ -5,7 +5,7 @@
 //  Created by Nick Breaton on 12/5/20.
 //
 
-#import <AppKit/AppKit.h>`
+#import <AppKit/AppKit.h>
 extern void DFRElementSetControlStripPresenceForIdentifier(NSTouchBarItemIdentifier, BOOL);
     extern void DFRSystemModalShowsCloseBoxWhenFrontMost(BOOL);
 
