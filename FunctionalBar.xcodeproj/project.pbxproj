@@ -17,17 +17,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D4410C6B257C1EF800ABB970 /* SaturdayAfternoon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SaturdayAfternoon-Bridging-Header.h"; sourceTree = "<group>"; };
+		D4410C6B257C1EF800ABB970 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		D4410CEC257C28AB00ABB970 /* TouchBarPrivateApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchBarPrivateApi.h; sourceTree = "<group>"; };
 		D4410CED257C28E400ABB970 /* TouchBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarController.swift; sourceTree = "<group>"; };
 		D4410CF5257C8CC400ABB970 /* references.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = references.rtf; sourceTree = "<group>"; };
-		D4C27AFD257C10E6003711CB /* SaturdayAfternoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaturdayAfternoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C27AFD257C10E6003711CB /* FunctionalBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionalBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C27B00257C10E6003711CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4C27B02257C10E6003711CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D4C27B04257C10E7003711CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4C27B07257C10E7003711CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4C27B09257C10E7003711CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4C27B0A257C10E7003711CB /* SaturdayAfternoon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SaturdayAfternoon.entitlements; sourceTree = "<group>"; };
+		D4C27B0A257C10E7003711CB /* FunctionalBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FunctionalBar.entitlements; sourceTree = "<group>"; };
 		D4C27B11257C12C4003711CB /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				D4410CF5257C8CC400ABB970 /* references.rtf */,
-				D4C27AFF257C10E6003711CB /* SaturdayAfternoon */,
+				D4C27AFF257C10E6003711CB /* FunctionalBar */,
 				D4C27AFE257C10E6003711CB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		D4C27AFE257C10E6003711CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4C27AFD257C10E6003711CB /* SaturdayAfternoon.app */,
+				D4C27AFD257C10E6003711CB /* FunctionalBar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D4C27AFF257C10E6003711CB /* SaturdayAfternoon */ = {
+		D4C27AFF257C10E6003711CB /* FunctionalBar */ = {
 			isa = PBXGroup;
 			children = (
 				D4C27B00257C10E6003711CB /* AppDelegate.swift */,
@@ -68,20 +68,20 @@
 				D4C27B04257C10E7003711CB /* Assets.xcassets */,
 				D4C27B06257C10E7003711CB /* Main.storyboard */,
 				D4C27B09257C10E7003711CB /* Info.plist */,
-				D4C27B0A257C10E7003711CB /* SaturdayAfternoon.entitlements */,
-				D4410C6B257C1EF800ABB970 /* SaturdayAfternoon-Bridging-Header.h */,
+				D4C27B0A257C10E7003711CB /* FunctionalBar.entitlements */,
+				D4410C6B257C1EF800ABB970 /* BridgingHeader.h */,
 				D4410CEC257C28AB00ABB970 /* TouchBarPrivateApi.h */,
 				D4410CED257C28E400ABB970 /* TouchBarController.swift */,
 			);
-			path = SaturdayAfternoon;
+			path = FunctionalBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4C27AFC257C10E6003711CB /* SaturdayAfternoon */ = {
+		D4C27AFC257C10E6003711CB /* FunctionalBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4C27B0D257C10E7003711CB /* Build configuration list for PBXNativeTarget "SaturdayAfternoon" */;
+			buildConfigurationList = D4C27B0D257C10E7003711CB /* Build configuration list for PBXNativeTarget "FunctionalBar" */;
 			buildPhases = (
 				D4C27AF9257C10E6003711CB /* Sources */,
 				D4C27AFA257C10E6003711CB /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = SaturdayAfternoon;
+			name = FunctionalBar;
 			productName = SaturdayAfternoon;
-			productReference = D4C27AFD257C10E6003711CB /* SaturdayAfternoon.app */;
+			productReference = D4C27AFD257C10E6003711CB /* FunctionalBar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D4C27AF8257C10E6003711CB /* Build configuration list for PBXProject "SaturdayAfternoon" */;
+			buildConfigurationList = D4C27AF8257C10E6003711CB /* Build configuration list for PBXProject "FunctionalBar" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4C27AFC257C10E6003711CB /* SaturdayAfternoon */,
+				D4C27AFC257C10E6003711CB /* FunctionalBar */,
 			);
 		};
 /* End PBXProject section */
@@ -305,17 +305,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = SaturdayAfternoon/SaturdayAfternoon.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FunctionalBar/FunctionalBar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SaturdayAfternoon/Info.plist;
+				INFOPLIST_FILE = FunctionalBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nickbreaton.SaturdayAfternoon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickbreaton.FunctionalBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SaturdayAfternoon/SaturdayAfternoon-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = FunctionalBar/BridgingHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -327,17 +327,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = SaturdayAfternoon/SaturdayAfternoon.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FunctionalBar/FunctionalBar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SaturdayAfternoon/Info.plist;
+				INFOPLIST_FILE = FunctionalBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nickbreaton.SaturdayAfternoon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickbreaton.FunctionalBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SaturdayAfternoon/SaturdayAfternoon-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = FunctionalBar/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -345,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4C27AF8257C10E6003711CB /* Build configuration list for PBXProject "SaturdayAfternoon" */ = {
+		D4C27AF8257C10E6003711CB /* Build configuration list for PBXProject "FunctionalBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4C27B0B257C10E7003711CB /* Debug */,
@@ -354,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4C27B0D257C10E7003711CB /* Build configuration list for PBXNativeTarget "SaturdayAfternoon" */ = {
+		D4C27B0D257C10E7003711CB /* Build configuration list for PBXNativeTarget "FunctionalBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4C27B0E257C10E7003711CB /* Debug */,
