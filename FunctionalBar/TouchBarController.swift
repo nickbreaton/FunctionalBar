@@ -23,7 +23,6 @@ class TouchBarController: NSObject, NSTouchBarDelegate {
         
         touchBar.delegate = self
         touchBar.defaultItemIdentifiers = [.slider]
-    
     }
     
     func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchBarItem.Identifier) -> NSTouchBarItem? {
@@ -35,7 +34,7 @@ class TouchBarController: NSObject, NSTouchBarDelegate {
             
             let spacer = NSView()
             
-            let grid = NSGridView(views: [ [ spacer, slider ]])
+            let grid = NSGridView(views: [[ spacer, slider ]])
             grid.setFrameSize(NSSize(width: 1004, height: 30))
             
             grid.column(at: 1).width = 300
@@ -50,5 +49,4 @@ class TouchBarController: NSObject, NSTouchBarDelegate {
     @objc func onSlide() {
         print(slider.floatValue)
     }
-    
 }
