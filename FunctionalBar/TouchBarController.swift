@@ -19,10 +19,28 @@ class TouchBarController: NSObject, NSTouchBarDelegate {
     var slider: NSSlider!
     
     func setupControlStripPresence() {
-        NSTouchBar.presentSystemModalTouchBar(touchBar, placement: 1, systemTrayItemIdentifier: .controlStripItem)
+      
+        
+        NSEvent.addGlobalMonitorForEvents(matching: .flagsChanged) {
+            self.onModifierKeyChange(event: $0)
+        }
+        
+        NSEvent.addLocalMonitorForEvents(matching: .flagsChanged) {
+            self.onModifierKeyChange(event: $0)
+            return nil
+        }
         
         touchBar.delegate = self
         touchBar.defaultItemIdentifiers = [.slider]
+    }
+    
+    func onModifierKeyChange(event: NSEvent) {
+        switch event.modifierFlags.intersection(.deviceIndependentFlagsMask) {
+        case [/*.function,*/ .shift]:
+            NSTouchBar.presentSystemModalTouchBar(touchBar, placement: 1, systemTrayItemIdentifier: .controlStripItem)
+        default:
+            NSTouchBar.dismissSystemModalTouchBar(touchBar)
+        }
     }
     
     func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchBarItem.Identifier) -> NSTouchBarItem? {
