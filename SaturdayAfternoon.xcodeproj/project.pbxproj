@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D4410CEE257C28E400ABB970 /* TouchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4410CED257C28E400ABB970 /* TouchBarController.swift */; };
+		D4410CF6257C8CC400ABB970 /* references.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D4410CF5257C8CC400ABB970 /* references.rtf */; };
 		D4C27B01257C10E6003711CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C27B00257C10E6003711CB /* AppDelegate.swift */; };
 		D4C27B03257C10E6003711CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C27B02257C10E6003711CB /* ViewController.swift */; };
 		D4C27B05257C10E7003711CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4C27B04257C10E7003711CB /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		D4410C6B257C1EF800ABB970 /* SaturdayAfternoon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SaturdayAfternoon-Bridging-Header.h"; sourceTree = "<group>"; };
 		D4410CEC257C28AB00ABB970 /* TouchBarPrivateApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchBarPrivateApi.h; sourceTree = "<group>"; };
 		D4410CED257C28E400ABB970 /* TouchBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarController.swift; sourceTree = "<group>"; };
+		D4410CF5257C8CC400ABB970 /* references.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = references.rtf; sourceTree = "<group>"; };
 		D4C27AFD257C10E6003711CB /* SaturdayAfternoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaturdayAfternoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C27B00257C10E6003711CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4C27B02257C10E6003711CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 		D4C27AF4257C10E6003711CB = {
 			isa = PBXGroup;
 			children = (
+				D4410CF5257C8CC400ABB970 /* references.rtf */,
 				D4C27AFF257C10E6003711CB /* SaturdayAfternoon */,
 				D4C27AFE257C10E6003711CB /* Products */,
 			);
@@ -147,6 +150,7 @@
 			files = (
 				D4C27B05257C10E7003711CB /* Assets.xcassets in Resources */,
 				D4C27B08257C10E7003711CB /* Main.storyboard in Resources */,
+				D4410CF6257C8CC400ABB970 /* references.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
