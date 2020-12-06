@@ -12,8 +12,6 @@ extension NSTouchBarItem.Identifier {
     static let slider = NSTouchBarItem.Identifier("com.nickbreaton.FunctionalBar.slider")
 }
 
-//var basicViewIdentifier = NSTouchBarItem.Identifier("com.toxblh.mtmr.scrollView.".appending(UUID().uuidString))
-
 class TouchBarController: NSObject, NSTouchBarDelegate {
     static let shared = TouchBarController()
 
@@ -34,27 +32,13 @@ class TouchBarController: NSObject, NSTouchBarDelegate {
             let customTouchBarItem = NSCustomTouchBarItem(identifier: identifier)
 
             slider = NSSlider(target: self, action: #selector(onSlide))
-//            customTouchBarItem.view = slider
             
             let spacer = NSView()
-            spacer.setFrameSize(NSSize(width: 1, height: spacer.frame.height))
             
-//                        let button = NSButton(title: "hello", target: self, action: #selector(onSlide))
+            let grid = NSGridView(views: [ [ spacer, slider ]])
+            grid.setFrameSize(NSSize(width: 1004, height: 30))
             
-            
-            let grid = NSGridView(views: [ [ slider ]])
-            
-            grid.column(at: 0).width = 350
-//            grid.row(at: 1).cell(at: 0).
-//            grid.xPlacement = .trailing
-            
-            grid.wantsLayer = true
-            grid.layer?.backgroundColor = NSColor.green.cgColor
-            
-//            view.addSubview(slider)
-            
-//            let button = NSButton(title: "hello", target: self, action: #selector(onSlide))
-//            view.addSubview(button)
+            grid.column(at: 1).width = 300
             
             customTouchBarItem.view = grid
             return customTouchBarItem
@@ -66,4 +50,5 @@ class TouchBarController: NSObject, NSTouchBarDelegate {
     @objc func onSlide() {
         print(slider.floatValue)
     }
+    
 }
