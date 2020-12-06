@@ -8,8 +8,8 @@
 import Foundation
 
 extension NSTouchBarItem.Identifier {
-    static let controlStripItem = NSTouchBarItem.Identifier("com.nickbreaton.SaturdayAfternoon.controlStrip")
-    static let slider = NSTouchBarItem.Identifier("com.nickbreaton.SaturdayAfternoon.slider")
+    static let controlStripItem = NSTouchBarItem.Identifier("com.nickbreaton.FunctionalBar.controlStrip")
+    static let slider = NSTouchBarItem.Identifier("com.nickbreaton.FunctionalBar.slider")
 }
 
 //var basicViewIdentifier = NSTouchBarItem.Identifier("com.toxblh.mtmr.scrollView.".appending(UUID().uuidString))

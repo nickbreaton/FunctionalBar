@@ -13,7 +13,6 @@
 		D4C27B03257C10E6003711CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C27B02257C10E6003711CB /* ViewController.swift */; };
 		D4C27B05257C10E7003711CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4C27B04257C10E7003711CB /* Assets.xcassets */; };
 		D4C27B08257C10E7003711CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C27B06257C10E7003711CB /* Main.storyboard */; };
-		D4C27B12257C12C4003711CB /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C27B11257C12C4003711CB /* WindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +27,6 @@
 		D4C27B07257C10E7003711CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4C27B09257C10E7003711CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4C27B0A257C10E7003711CB /* FunctionalBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FunctionalBar.entitlements; sourceTree = "<group>"; };
-		D4C27B11257C12C4003711CB /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,6 @@
 			children = (
 				D4C27B00257C10E6003711CB /* AppDelegate.swift */,
 				D4C27B02257C10E6003711CB /* ViewController.swift */,
-				D4C27B11257C12C4003711CB /* WindowController.swift */,
 				D4C27B04257C10E7003711CB /* Assets.xcassets */,
 				D4C27B06257C10E7003711CB /* Main.storyboard */,
 				D4C27B09257C10E7003711CB /* Info.plist */,
@@ -162,7 +159,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4C27B03257C10E6003711CB /* ViewController.swift in Sources */,
-				D4C27B12257C12C4003711CB /* WindowController.swift in Sources */,
 				D4C27B01257C10E6003711CB /* AppDelegate.swift in Sources */,
 				D4410CEE257C28E400ABB970 /* TouchBarController.swift in Sources */,
 			);
