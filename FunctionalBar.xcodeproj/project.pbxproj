@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D43ED23A257DD722007CAD39 /* TouchBarStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43ED239257DD721007CAD39 /* TouchBarStack.swift */; };
 		D4410CEE257C28E400ABB970 /* TouchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4410CED257C28E400ABB970 /* TouchBarController.swift */; };
 		D4410CF6257C8CC400ABB970 /* references.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D4410CF5257C8CC400ABB970 /* references.rtf */; };
 		D4C27B01257C10E6003711CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C27B00257C10E6003711CB /* AppDelegate.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D43ED239257DD721007CAD39 /* TouchBarStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarStack.swift; sourceTree = "<group>"; };
 		D4410C6B257C1EF800ABB970 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		D4410CEC257C28AB00ABB970 /* TouchBarPrivateApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchBarPrivateApi.h; sourceTree = "<group>"; };
 		D4410CED257C28E400ABB970 /* TouchBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarController.swift; sourceTree = "<group>"; };
@@ -40,6 +42,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D43ED238257DD703007CAD39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D43ED239257DD721007CAD39 /* TouchBarStack.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D43ED23D257DD788007CAD39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D43ED23E257DD79F007CAD39 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		D4C27AF4257C10E6003711CB = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +84,9 @@
 		D4C27AFF257C10E6003711CB /* FunctionalBar */ = {
 			isa = PBXGroup;
 			children = (
+				D43ED23D257DD788007CAD39 /* Models */,
+				D43ED238257DD703007CAD39 /* Views */,
+				D43ED23E257DD79F007CAD39 /* ViewModels */,
 				D4C27B00257C10E6003711CB /* AppDelegate.swift */,
 				D4C27B02257C10E6003711CB /* ViewController.swift */,
 				D4C27B04257C10E7003711CB /* Assets.xcassets */,
@@ -158,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D43ED23A257DD722007CAD39 /* TouchBarStack.swift in Sources */,
 				D4C27B03257C10E6003711CB /* ViewController.swift in Sources */,
 				D4C27B01257C10E6003711CB /* AppDelegate.swift in Sources */,
 				D4410CEE257C28E400ABB970 /* TouchBarController.swift in Sources */,

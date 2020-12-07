@@ -6,65 +6,61 @@
 //
 
 import Foundation
+import SwiftUI
 
 extension NSTouchBarItem.Identifier {
-    static let controlStripItem = NSTouchBarItem.Identifier("com.nickbreaton.FunctionalBar.controlStrip")
-    static let slider = NSTouchBarItem.Identifier("com.nickbreaton.FunctionalBar.slider")
+    static let strip = NSTouchBarItem.Identifier("com.nickbreaton.FunctionalBar.strip")
+    static let rootView = NSTouchBarItem.Identifier("com.nickbreaton.FunctionalBar.rootView")
 }
 
+struct MainView: View {
+    @State var value = 1.0
+    
+    var body: some View {
+        TouchBarStack {
+            Spacer()
+            Slider(value: $value, in: -1.0...1.0)
+                .frame(width: 250)
+        }
+    }
+}
+ 
 class TouchBarController: NSObject, NSTouchBarDelegate {
     static let shared = TouchBarController()
 
     let touchBar = NSTouchBar()
-    var slider: NSSlider!
     
     func setupControlStripPresence() {
-      
+        NSTouchBar.presentSystemModalTouchBar(touchBar, placement: 1, systemTrayItemIdentifier: .strip)
         
-        NSEvent.addGlobalMonitorForEvents(matching: .flagsChanged) {
-            self.onModifierKeyChange(event: $0)
-        }
-        
-        NSEvent.addLocalMonitorForEvents(matching: .flagsChanged) {
-            self.onModifierKeyChange(event: $0)
-            return nil
-        }
+//        NSEvent.addGlobalMonitorForEvents(matching: .flagsChanged) {
+//            self.onModifierKeyChange(event: $0)
+//        }
+//
+//        NSEvent.addLocalMonitorForEvents(matching: .flagsChanged) {
+//            self.onModifierKeyChange(event: $0)
+//            return nil
+//        }
         
         touchBar.delegate = self
-        touchBar.defaultItemIdentifiers = [.slider]
+        touchBar.defaultItemIdentifiers = [.rootView]
     }
     
-    func onModifierKeyChange(event: NSEvent) {
-        switch event.modifierFlags.intersection(.deviceIndependentFlagsMask) {
-        case [/*.function,*/ .shift]:
-            NSTouchBar.presentSystemModalTouchBar(touchBar, placement: 1, systemTrayItemIdentifier: .controlStripItem)
-        default:
-            NSTouchBar.dismissSystemModalTouchBar(touchBar)
-        }
-    }
+//    func onModifierKeyChange(event: NSEvent) {
+//        switch event.modifierFlags.intersection(.deviceIndependentFlagsMask) {
+//        case [/*.function,*/ .shift]:
+//            NSTouchBar.presentSystemModalTouchBar(touchBar, placement: 1, systemTrayItemIdentifier: .strip)
+//        default:
+//            NSTouchBar.dismissSystemModalTouchBar(touchBar)
+//        }
+//    }
     
     func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchBarItem.Identifier) -> NSTouchBarItem? {
-        switch identifier {
-        case NSTouchBarItem.Identifier.slider:
+        if (identifier == NSTouchBarItem.Identifier.rootView) {
             let customTouchBarItem = NSCustomTouchBarItem(identifier: identifier)
-
-            slider = NSSlider(target: self, action: #selector(onSlide))
-            
-            let spacer = NSView()
-            
-            let grid = NSGridView(views: [[ spacer, slider ]])
-            grid.setFrameSize(NSSize(width: 1004, height: 30))
-            
-            grid.column(at: 1).width = 300
-            
-            customTouchBarItem.view = grid
+            customTouchBarItem.view = NSHostingView(rootView: MainView())
             return customTouchBarItem
-        default:
-          return nil
         }
-    }
-    
-    @objc func onSlide() {
-        print(slider.floatValue)
+        return nil
     }
 }
